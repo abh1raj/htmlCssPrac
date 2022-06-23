@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Nunito;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(31, 46, 97);
+}
+
+.page {
+  width: 600px;
+}
+
+p {
+  margin: 0;
+  text-shadow: 0px 2px 2px black;
+}
+
+.header {
+  position: relative;
+  background-color: white;
+  height: 90px;
+  color: rgb(31, 46, 97);
+  z-index: 10;
+  position: relative;
+}
+
+.header p {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-shadow: none;
+  font-size: 40px;
+}
+
+.fab {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.hotels {
+  font-weight: 200;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.grey-bg {
+  width: 600px;
+  height: 100px;
+  background-color: rgb(243, 243, 243);
+  z-index: 1;
+  position: absolute;
+}
+
+.image-container {
+  margin-top: 30px;
+  background-image: url("images/Background-image.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 450px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 50px;
+}
+
+.location-container {
+  display: flex;
+  background-color: rgb(31, 46, 97);
+  height: 55px;
+  align-items: center;
+  justify-content: start;
+  white-space: nowrap;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.location-divider {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.banner-container {
+  background-color: rgba(151, 152, 212, 0.8);
+  width: 250px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  margin-top: 35px;
+  align-items: flex-start;
+  padding: 45px 10px 45px 30px;
+}
+
+.pay {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.pay span {
+  color: rgb(255, 217, 0);
+}
+
+.discount {
+  display: flex;
+  flex-direction: column;
+}
+
+.flat {
+  font-size: 22px;
+  margin-bottom: -8px;
+}
+
+.discount-percentage-container {
+  position: relative;
+}
+
+.discount-percentage {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.star {
+  position: absolute;
+  font-size: 16px;
+  top: 5px;
+  right: -8px;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking {
+  display: flex;
+  background-color: rgb(255, 234, 45);
+  justify-content: center;
+  font-size: 23px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+  padding: 1px 12px;
+  width: 200px;
+  color: rgb(31, 46, 97);
+  white-space: nowrap;
+}
+
+.booking p {
+  text-shadow: none;
+  font-weight: 500;
+}
+
+.amount {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.use-code-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.use-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(31, 46, 97);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 25px;
+  height: 12px;
+  width: 65%;
+}
+
+.use-code p span {
+  text-shadow: none;
+}
+
+.paidstay {
+  font-weight: 700;
+}
+
+.tandc {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  font-size: 8px;
+  color: rgb(8, 16, 43);
+  font-weight: 500;
+}
+
+.bottom-bar {
+  background-color: rgb(31, 46, 97);
+  position: absolute;
+  width: 500px;
+  height: 20px;
+  bottom: -20px;
+  right: 50px;
+}
+
+.promise p {
+  text-shadow: none;
+  font-weight: 700;
+}
+
+.promise {
+  display: grid;
+  justify-content: center;
+  color: rgb(31, 46, 97);
+  grid-template-rows: 50px;
+  margin-bottom: 8px;
+}
+
+.promise-text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.promise-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.promise-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promise-icon-container {
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70px;
+  white-space: nowrap;
+}
+
+.promise-icon img {
+  width: 25px;
+}
+
+.promise-icon-text {
+  font-size: 9px;
+}
+
+.app-banner-container {
+  background-color: rgb(255, 217, 0);
+  color: black;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+  padding: 8px 16px;
+  align-items: center;
+}
+
+.app-banner-text {
+  width: 200px;
+}
+
+.app-banner-container p {
+  text-shadow: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.app-download-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 22px;
+}
+
+.app-download-text {
+  position: absolute;
+  top: 5px;
+}
+
+.app-download-text p {
+  font-size: 10px;
+}
+
+.app-download-icons {
+  display: flex;
+}
+
+.app-download-icons img {
+  width: 70px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.footer {
+  height: 80px;
+  width: 600px;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer img {
+  width: 20px;
+}
+
+.footer p {
+  text-shadow: none;
+  color: rgb(31, 46, 97);
+  font-weight: 700;
+}
+
+.contact {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.socials img {
+  margin-right: 5px;
+  cursor: pointer;
+}
