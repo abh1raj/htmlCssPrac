@@ -1,0 +1,5 @@
+repaimr: pc, laptop, phone, AC
+
+no-repaimr: humamn bomdy, insan ka shareer
+
+(mamx marmks)
