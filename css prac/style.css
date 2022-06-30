@@ -2,27 +2,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 100%;
+  font-size: 1em;
 }
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: rgb(233, 255, 209);
+  background-color: #24252a;
   padding-top: 150px;
   padding-bottom: 99999px;
+  color: aliceblue;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background-color: rgb(233, 255, 209);
-  /* background-color: rgb(36, 36, 36); */
+  background-color: #24252a;
   flex: 1;
   width: 100%;
   height: 50px;
-  color: rgb(31, 31, 31);
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   align-items: center;
@@ -30,30 +29,50 @@ body {
   top: 0;
   z-index: 9999;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px groove white;
 }
 
 .navigation-bar li {
   display: inline;
-  cursor: pointer;
-  transition-duration: 0.15s;
-  margin: 0px 10px 0px 10px;
 }
 
-.navigation-bar li:hover {
-  /* background-color: black; */
-  color: rgb(233, 255, 209);
-  text-shadow: 0px 1px 2px rgb(0, 0, 0);
+.navigation-bar li a {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
+  margin: 0px 10px 0px 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.navigation-bar li a:hover {
+  background-color: rgb(31, 31, 31);
+  color: cornflowerblue;
+}
+
+.contact-button {
+  padding: 5px 10px;
+  border: 1px groove aliceblue;
+  background-color: transparent;
+  color: aliceblue;
+  cursor: pointer;
+  transition: background-color 300ms ease-out, color 300ms ease-in;
+}
+
+.contact-button:hover {
+  background-color: cornflowerblue;
+  color: white;
 }
 
 .main-container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .welcome-text {
   font-family: "Bebas Neue";
-  color: rgb(26, 26, 26);
   margin-left: 450px;
 }
 
@@ -67,25 +86,19 @@ body {
 .my-name {
   font-size: 5.3em;
   font-weight: 700;
-  color: rgb(32, 32, 32);
   letter-spacing: 25px;
 }
 
-.content-box-container {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 150px;
-  justify-content: center;
-}
-
 .content-box {
-  position: absolute;
-  color: rgb(26, 26, 26);
   width: 40%;
   padding: 10px 20px;
   flex: 1;
   font-size: 1.3em;
-  margin-left: 230px;
+  margin: 20px 0px 0px 790px;
   font-family: "Barlow";
+}
+
+.content-box ul {
+  list-style: none;
+  line-height: 40px;
 }
