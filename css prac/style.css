@@ -21,14 +21,13 @@ body {
   flex: 1;
   width: 100%;
   height: 50px;
-  font-size: 1.15em;
+  font-size: 1em;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   align-items: center;
   padding: 5px 20px;
   top: 0;
   z-index: 9999;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   border-bottom: 1px groove white;
 }
 
@@ -70,10 +69,29 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.my-image {
+  height: 49em;
+  width: 36em;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 70px;
+  z-index: 1;
+}
 
 .welcome-text {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   margin-left: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .intro {
@@ -87,15 +105,19 @@ body {
   font-size: 5.3em;
   font-weight: 700;
   letter-spacing: 25px;
+  color: cornflowerblue;
 }
 
 .content-box {
   width: 40%;
-  padding: 10px 20px;
   flex: 1;
   font-size: 1.3em;
-  margin: 20px 0px 0px 790px;
+  margin: 20px 0px 0px 450px;
   font-family: "Barlow";
+  position: absolute;
+  top: 300px;
+  left: 0;
+  z-index: 2;
 }
 
 .content-box ul {
