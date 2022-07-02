@@ -4,31 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <title>JS prac</title>
   </head>
   <body>
+    <h1>Javascript Practice</h1>
+
+    <h3 id="current-time">The time is:</h3>
+
+    <button id="btn" onclick="showTime()">Show Time</button>
+
+    <h2 id="string-backtick"></h2>
+
     <h3>Fahrenheit to celsius</h3>
     <input type="text" id="fahrenheit" />
     <button onclick="toCelsius()">Convert to celsius!</button>
     <div id="celcius-result"></div>
-    <script>
-      // toCelsius:
 
-      function toCelsius() {
-        let fahrenheit = document.getElementById("fahrenheit").value;
-        let resultCelsius = (5 / 9) * (fahrenheit - 32);
-        document.getElementById("celcius-result").innerHTML = resultCelsius;
-      }
-
-      // Creating elements and displaying them on the web page...
-
-      // let intro = ["Hi", "my", "name", "is", "Abhiraj"];
-      // intro.forEach(function (wordInput) {
-      //   let divCreater = document.createElement("div");
-      //   divCreater.innerText = wordInput;
-      //   document.body.appendChild(divCreater);
-      // });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
