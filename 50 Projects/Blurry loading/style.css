@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* viewport height, takes up entire height of the screen */
+  height: 100vh;
+  margin: 0;
+  /* Hide scroll bar */
+  overflow: hidden;
+}
+
+.bg {
+  background: url("Images/speed.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -60px;
+  left: -60px;
+  width: calc(100vw + 120px);
+  height: calc(100vh + 120px);
+  position: absolute;
+  z-index: 1;
+  filter: blur(0px);
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.loading-text {
+  font-size: 70px;
+  z-index: 2;
+  position: absolute;
+  color: white;
+}
