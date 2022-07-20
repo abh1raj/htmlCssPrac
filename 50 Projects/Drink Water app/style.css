@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+:root {
+  --cup-bg: #70afce;
+  --background-color: #3a7b99;
+  --text-color: #fff;
+  --text-color-filled: var(--background-color);
+  --fill-color: #a5def1;
+  --border-color: #006685;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* viewport height, takes up entire height of the screen */
+  /* Hide scroll bar */
+  overflow: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.cup {
+  margin: 10px 3px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 250px;
+  background-color: var(--cup-bg);
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+  border: 2px solid var(--border-color);
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.15s ease-in;
+}
+
+.remained span {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.remained small {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cup .percentage {
+  background-color: var(--fill-color);
+  text-align: center;
+  color: var(--text-color-filled);
+  font-size: 30px;
+  transition: 0.15s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.cup.cup-small {
+  height: 75px;
+  width: 50px;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.15s ease-in;
+}
+
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: var(--text-color-filled);
+}
+
+.cups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 250px;
+}
