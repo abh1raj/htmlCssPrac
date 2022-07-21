@@ -61,14 +61,14 @@ function createMovieElement(title, overview, rating, posterPath, ratingColor) {
   movieElement.innerHTML = `<img
   src="${posterPath}"
   alt="Movie thumbnail"
-/>
-<div class="movie-info">
-  <h3>${title}</h3>
-  <span class="${ratingColor}">${rating}</span>
-</div>
-<div class="overview">
-  <h3>Overview</h3>
-  ${overview}
-</div>`;
+  />
+  <div class="movie-info">
+    <h3>${title}</h3>
+    <span class="${ratingColor}">${rating}</span>
+  </div>
+  <div class="overview">
+    <h3>Overview</h3>
+    ${overview}
+  </div>`;
   mainContent.appendChild(movieElement);
 }
