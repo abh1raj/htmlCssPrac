@@ -69,7 +69,7 @@ main {
   /* padding-left: 20px; */
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 2200px) {
   main {
     justify-content: left;
   }
