@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;700&display=swap");
+
+:root {
+  --backgroung-color: #f9f7f7;
+  --primary-color: #3f72af;
+  --secondary-color: #dbe2ef;
+  --text-color: #112d4e;
+}
+
+html.dark {
+  --backgroung-color: #222831;
+  --primary-color: #00adb5;
+  --secondary-color: #393e46;
+  --text-color: #eeeeee;
+}
+
+html.dark body {
+  background-color: var(--backgroung-color);
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* viewport height, takes up entire height of the screen */
+  height: 100vh;
+  margin: 0;
+  /* Hide scroll bar */
+  overflow: hidden;
+  background-color: var(--backgroung-color);
+  color: var(--text-color);
+  transition: all 0.2s ease-in;
+}
+
+.btn {
+  margin: 100px 0 200px 0;
+  background-color: var(--primary-color);
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.15s ease-in;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.clock-container {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in;
+}
+
+.needle {
+  height: 100px;
+  width: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+  width: 3px;
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(230deg);
+  height: 70px;
+}
+
+.needle.second {
+  height: 55px;
+  background-color: tomato;
+}
+
+.center-point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--secondary-color);
+  top: 50%;
+  left: 50%;
+  border: 2px solid var(--primary-color);
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+
+.time-date {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-date span {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.time-date .time {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.time-date .circle {
+  height: 30px;
+  width: 30px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  transition: 0.15s ease-in;
+}
