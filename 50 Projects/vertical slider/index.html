@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vertical slider</title>
+  </head>
+  <body>
+    <div class="slider-container" id="sliderContainer">
+      <div class="left-slider-container" id="leftSlide">
+        <div style="background-color: lightgreen">
+          <h1>The chase</h1>
+          <p>A normal day in Hawkins</p>
+        </div>
+
+        <div style="background-color: rgb(108, 247, 228)">
+          <h1>Colorful highway</h1>
+          <p>Flowers on the roadside</p>
+        </div>
+
+        <div style="background-color: rgb(237, 179, 79)">
+          <h1>The drift king</h1>
+          <p>Thats a cool looking vynl</p>
+        </div>
+
+        <div style="background-color: rgb(234, 234, 234)">
+          <h1>I am speed!</h1>
+          <p>Living in a blurry world</p>
+        </div>
+      </div>
+
+      <div class="right-slider-container" id="rightSlide">
+        <div style="background-image: url('../Images/IAmSpeed.png')"></div>
+
+        <div style="background-image: url('../Images/DriftHub.png')"></div>
+
+        <div style="background-image: url('../Images/Color.png')"></div>
+
+        <div style="background-image: url('../Images/Chase.jfif')"></div>
+      </div>
+
+      <div class="action-buttons">
+        <button class="btn up-btn" id="upBtn">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+        <button class="btn down-btn" id="downBtn">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
