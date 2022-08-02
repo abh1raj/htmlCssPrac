@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:wght@400;700&display=swap");
 
+:root {
+  --background-color: #212121;
+  --primary-color: #323232;
+  --secondary-color: #0d7377;
+  --text-color: #14ffec;
+  --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,4 +25,101 @@ body {
   margin: 0;
   /* Hide scroll bar */
   overflow: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 1rem;
+}
+
+.form-container .search {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  box-shadow: var(--box-shadow);
+  max-width: 50%;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.form-container .search::placeholder {
+  color: #ccc;
+}
+
+.form-container .search:focus {
+  outline: none;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 3rem 1rem;
+}
+
+.profile-img {
+  margin-top: 4%;
+}
+
+.profile-img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 8px solid var(--secondary-color);
+}
+
+.user-info {
+  margin-left: 2.5rem;
+}
+
+.name {
+  font-size: 2rem;
+  /* margin: 0 0 0rem 0; */
+}
+
+.userid {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.user-info p {
+  font-size: 1rem;
+  margin: 2rem 0 2.5rem 0;
+  letter-spacing: 1px;
+  line-height: 1.7rem;
+}
+
+.user-info ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 2rem 0;
+}
+
+.user-info ul li strong {
+  margin-left: 8px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
